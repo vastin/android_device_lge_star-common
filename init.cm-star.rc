@@ -2,7 +2,7 @@ import init.star.usb.rc
 
 on init
     export TMPDIR /data/local/tmp
-    export EXTERNAL_STORAGE /storage/sdcard0
+    export EXTERNAL_STORAGE /storage/sdcard1
 
 # Backward compatibility
     symlink /system/bin /bin
@@ -11,7 +11,7 @@ on init
     mkdir /storage 0111 system system
     mkdir /storage/sdcard0 0000 system system
     mkdir /storage/sdcard1 0000 system system
-    symlink /storage/sdcard0 /sdcard
+    symlink /storage/sdcard1 /sdcard
 
     # Secure container public mount points.
     mkdir /mnt/asec  0700 root system
