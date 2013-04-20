@@ -5,7 +5,7 @@ on init
 
 # create mountpoints for storage
     mkdir /storage 0050 system sdcard_r
-    mkdir /storage/sdcard1 0000 system system
+    mkdir /storage/emmc 0000 system system
 
     mkdir /mnt/shell/sdcard 0700 shell shell
     mkdir /storage/sdcard 0555 root root
